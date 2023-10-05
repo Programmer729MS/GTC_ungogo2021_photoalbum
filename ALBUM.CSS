@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(5, 5, 174);
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+h4{
+    margin: auto;
+}
+
+
+
+
+
+.box {
+    padding: 0.5rem;
+    background-color: pink;
+    border-bottom: 0 40px 0 40px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    z-index: 100%;
+    box-shadow: 0.2px 0.2px 7px 0.2px;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    width: 1200px;
+    height: 1200px;
+    background-image: conic-gradient(transparent, transparent, transparent, #48ff7f);
+    animation: design 4s linear infinite;
+    animation-delay: -2s;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    width: 1200px;
+    height: 1200px;
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(71, 129, 255));
+    animation: design 4s linear infinite;
+}
+
+.box .glow {
+    padding: 1.3rem;
+    width: 80%;
+    height: 220px;
+    z-index: 1;
+    border-radius: 0 40px 0 40px;
+    background-color: white;
+    box-shadow: 0.2px 0.2px 7px 0.2px;
+}
+
+@keyframes design {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* .glow {
+  font-size: 25px;
+  background: linear-gradient(to top left,  rgb(250, 120, 155), rgb(250, 227, 231), rgb(245, 97, 250));
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  color: rgb(3, 9, 128);
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+} */
+
+
+/* @-webkit-keyframes glow {
+    
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fffeff, 0 0 40px #f9f6f8, 0 0 50px #fffeff, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #fdfcfd, 0 0 40px #f8f7f8, 0 0 50px #f8f6f7, 0 0 60px #fdfdfd, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+} */
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: serif;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+.navbar a:hover {
+    color: tomato;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    padding: 10px;
+    background-color: blue;
+    width: 100%;
+    bottom: 0;
+    color: pink;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
+marquee {
+    position: absolute;
+    top: 200px;
+    color: tomato;
+    /* background-color: ; */
+    /* text-shadow: 0 0 3px #FF0000; */
+    z-index: 999;
+    right: 11%;
+    left: 12%;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid red; */
+
+}
+
+button {
+    width: 20rem;
+    padding: 2rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    border: 1px solid deeppink;
+    color: deeppink;
+    border-radius: 10px;
+    background: none;
+    font-size: 2rem;
+    /* transition: 1s; */
+    transition: 0.1s;
+    box-shadow: 0.2px 0.2px 7px 0.2px;
+}
+
+button:hover {
+    color: tomato;
+    border: 2px dotted tomato;
+    transform: scale(0.9);
+}
+
+
+
+@media  (max-width: 600px){
+
+    /* .glow {
+        font-size: 10px;
+        padding: 30px;
+        width: 100%;
+        letter-spacing: 5px;
+        line-height: 2rem;
+    } */
+
+    span {
+        color: rgb(4, 91, 4);
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    marquee {
+        position: fixed;
+        z-index: 9999;
+    }
+
+    .box {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 999;
+    }
+
+    .box .glow {
+        padding: 2rem;
+        width: 95%;
+
+    }
+
+    .buttons {
+        /* border: 1px solid red; */
+        width: 90%;
+        display: block;
+        margin-top: 15rem;
+        margin-bottom: 6rem;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 2rem;
+        font-weight: 700;
+    }
+
+    button:hover{
+        border-radius: 40px 0;
+    }
+    
+}
