@@ -22,12 +22,12 @@ marquee {
     width: 100%;
     margin-bottom: 5rem;
     /* margin-top: -3rem; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
-.search {
+/* .search {
    width: 100%;
-   margin-top: 0.4rem;
+   margin-top: 2rem;
 }
 
 .search input {
@@ -43,7 +43,7 @@ marquee {
 .search input::placeholder {
     color: green;
     font-weight: 500;
-}
+} */
 
 .container {
     /* border: 1px solid BLUE; */
@@ -93,7 +93,8 @@ marquee {
     cursor: pointer;
     width: 4rem;
     font-size: 1.8rem;
-    background-color: white;
+    background-color: blue;
+    color: #fff;
 }
 
 img {
@@ -174,7 +175,7 @@ span {
     }
     .container {
         display: block;
-        margin-top: 4rem;
+        margin-top: 5rem;
         /* margin-bottom: 2.2rem; */
         width: 100%;
         /* border: 1px solid red; */
@@ -225,6 +226,31 @@ span {
        font-size: 15px;
        font-family: sans-serif;
     }
+
+    /* .search {
+        margin-top: -2rem;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .search input {
+        width: 100%;
+        background: transparent;
+        border: 1px solid blue;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #09c0f8;
+    }
+
+    .search input:hover {
+        outline: 1px solid blue;
+    }
+    
+    .search input::placeholder {
+        color: rgb(10, 170, 182);
+        font-weight: 500;
+    } */
+
 
     
 

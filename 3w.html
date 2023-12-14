@@ -16,13 +16,40 @@
             <a href="./index.html"><p class="arrow">&LeftArrow;</p></a>
         </div>
 
-        <div class="search">
+        <!-- <div class="search">
             <input type="text" name="" id="find" placeholder="Search here to find someone..." onkeyup="search()">
-        </div>
+        </div> -->
    </div>
 
    
-   .mai
+    <div class="container">
+        <div class="box-one">
+        <div class="image">
+                <img src="./images/bldn/b.jpg" alt="">
+        </div>
+            <div class="text-1">
+                <!-- <h3>SALISU SA"AD UMAR</h3> -->
+                <p class="name"><span>NAME:-</span> NURADDEN JAMIL</p>
+                <p class="n-name"><span>NICK NAME:-</span> BADODO</p>
+                <p class="hostel"><span>HOSTEL:- </span> AMINU KANO 1</p>
+                <p class="address"><span>ADDRESS:-</span> GWALE JA'EN</p>
+                <p class="number"><span>PHONE No:-</span>  -------</p>
+            </div>
+        </div>
+        <div class="box-two">
+            <div class="text-1">
+                <p class="name"><span>NAME:-</span> NURADDEN JAMIL</p>
+                <p class="n-name"><span>NICK NAME:-</span> JORO BOYY</p>
+                <p class="hostel"><span>HOSTEL:- </span> BARDE</p>
+                <p class="address"><span>ADDRESS:-</span>KUMBOTSO</p>
+                <p class="number"><span>PHONE No:-</span> 09162706595</p>
+            </div>
+            <div class="image">
+                <img src="./images/elctrcl/IMG-20230913-WA0039~2.jpg" alt="">
+        </div>
+        </div>
+        
+    </div>
     
     <div class="last"></div>
 
@@ -42,10 +69,7 @@
 
             for(var i = 0;i<=l.length;i++){
                 let a=item[i].getElementsByTagName('h3')[0];
-
                 let value=a.innerHTML || a.innerText || a.textContent;
-
-
                 if(value.toUpperCase().indexOf(filter) > -1) {
                     item[i].style.display="";
                 }

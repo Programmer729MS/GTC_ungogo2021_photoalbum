@@ -78,6 +78,7 @@ h4{
     /* background-position: center;
     background-size: cover; */
     box-shadow: 0.2px 0.2px 7px 0.2px;
+    overflow: hidden;
 }
 
 @keyframes design {
@@ -132,7 +133,7 @@ marquee {
     /* background-color: ; */
     /* text-shadow: 0 0 3px #FF0000; */
     z-index: 999;
-    right: 11%;
+    right: -5%;
     left: 12%;
     font-weight: 600;
 }
@@ -165,7 +166,7 @@ button {
 button:hover {
     color: tomato;
     border: 2px dotted tomato;
-    transform: scale(0.9);
+    /* transform: scale(0.9); */
 }
 
 
@@ -221,8 +222,8 @@ button:hover {
         font-weight: 700;
     }
 
-    button:hover{
+    /* button:hover{
         border-radius: 40px 0;
-    }
+    } */
     
 }
