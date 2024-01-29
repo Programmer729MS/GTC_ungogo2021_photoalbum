@@ -68,6 +68,7 @@ marquee {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    padding-top: 6rem;
     
 }
 .gallery {
@@ -92,6 +93,48 @@ marquee {
   text-align: center;
   display: none;
 }
+
+.slide-container {
+    width: 100%;
+    overflow: hidden;
+  background: #ffffff;
+    top: 35px;
+    position: fixed;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    animation: slide 10s infinite;
+}
+
+.slide {
+    width: 100%;
+    border: 1px solid blue;
+    height: 100px;
+    margin-left: 1rem;
+}
+
+.slide img {
+    width: 100%;
+    height: 100px;
+}
+
+@keyframes slide {
+    0%{ 
+        transform: translate(0);
+    }
+    33%{
+        transform: translateX(-100%);
+    }
+    66%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+
 
 @media (max-width:600px) {
 

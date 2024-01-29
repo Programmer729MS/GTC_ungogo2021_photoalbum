@@ -17,7 +17,7 @@
         <a href="./index.html"><p class="arrow">&LeftArrow;</p></a>
     </div>
 
-   <div class="content">
+   <!-- <div class="content">
         <div class="container">
             <img src="./images/teachers/FB_IMG_16970870926334346.jpg" alt="img" class="image">
             <div class="overlay">
@@ -108,7 +108,31 @@
                 </div>
             </div>
         </div>
-   </div>
+   </div> -->
+   
+   <div class="slideshow-container">
+        <div class="mySlide fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./images/icon (1).jpg" style="width:100%">
+            <div class="text">caption Text</div>
+        </div>
+        <div class="mySlide fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./images/icon (6).jpg" style="width:100%">
+            <div class="text">caption Text</div>
+        </div>
+        <div class="mySlide fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./images/ms.jpg" style="width:100%">
+            <div class="text">caption Text</div>
+        </div>
+   </div> 
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
    
    
     <div class="navbar">
@@ -121,16 +145,20 @@
     
 
     <script>
+        let slideIndex =  0;
+        showSlides();
 
-        AOS.init();
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
 
-
-        // let text = document.querySelector(".text");
-        // let.innerHTML = text.innerText
-
-        // .split("") 
-        // .map(letters, i) =>
-        // <span style="transition-delay:${i * 40}ms;filter:hue=rotate(${i * 30 }deg)">${letters} </span>
+            for (i = 0; < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+        }
+        
     </script>
     
 </body>
